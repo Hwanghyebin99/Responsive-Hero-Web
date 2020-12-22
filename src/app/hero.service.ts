@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs'; //RxJS라이브러리가 제공하는 클래스(Observable)
-
+import { img } from './img';
 import { Hero } from './hero';
-import { HEROES } from './mock-heroes';
-
+//import { HEROES } from './mock-heroes';
+import { IMGS } from './mock-heroes';
 import { MessageService } from './message.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http'; //httpClient와 httpHeader 심볼 로드
 import { catchError, map, tap } from 'rxjs/operators';
@@ -17,6 +17,9 @@ export class HeroService {
   // getHeroes(): Observable<Hero[]> {
   //   return of(HEROES); //Observable<Hero[]>타입으로 한번에 반환
   // }
+  getImgs(): Observable<img[]> {
+    return of(IMGS); //Observable<Hero[]>타입으로 한번에 반환
+  }
   private heroesUrl = 'api/heroes'; 
   constructor( private http: HttpClient, //httpClient instance 받아옴
     private messageService: MessageService) { }

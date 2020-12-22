@@ -1,4 +1,5 @@
 import { Hero } from './hero';
+import {img} from'./img';
 
 export const HEROES: Hero[] = [
   { id: 11, name: 'Dr Nice' },
@@ -11,4 +12,9 @@ export const HEROES: Hero[] = [
   { id: 18, name: 'Dr IQ' },
   { id: 19, name: 'Magma' },
   { id: 20, name: 'Tornado' }
+];
+export const IMGS: img[] = [
+  
+    { name: 'rock', imgURL:'/assets/rock600x400.jpg' },
+  
 ];
