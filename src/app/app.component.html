@@ -1,5 +1,4 @@
 <head>
-  <title>ng-bootstrap buttons demo - checkboxreactive</title>
   <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.css" />
@@ -8,33 +7,11 @@
   <h1>
     Welcom to {{title}}!
   </h1>
-  <nav  class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Angular</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="navbar-brand" routerLink="/dashboard">Dashboard<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" routerLink="/heroes">Heroes</a>
-        <a class="nav-item nav-link" href="#">Features</a>
-      </div>
-    </div>
-  </nav>
+  <app-nav-bar></app-nav-bar>
+  <app-view-image></app-view-image>
   <router-outlet></router-outlet>
+  
   <app-messages></app-messages>
-</div>
-
-<div class="btn-group btn-group-toggle">
-  <label class="btn-primary" ngbButtonLabel>
-    <input type="checkbox" ngbButton> Left (pre-checked)
-  </label>
-  <label class="btn-primary" ngbButtonLabel>
-    <input type="checkbox" ngbButton> Middle
-  </label>
-  <label class="btn-primary" ngbButtonLabel>
-    <input type="checkbox"  ngbButton> Right
-  </label>
+  
 </div>
 
