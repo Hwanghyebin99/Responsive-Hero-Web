@@ -1,18 +1,38 @@
-<link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.css" />
 
-<nav  class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Angular</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="navbar-brand" routerLink="/dashboard">Dashboard<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" routerLink="/heroes">Heroes</a>
-        <a class="nav-item nav-link" href="#">Features</a>
+  <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container-fluid">
+      <a routerLink="/" class="navbar-brand">HEROES</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        (click)="collapsed = !this.collapsed"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        id="navbarSupportedContent"
+        [ngClass]="{ collapse: collapsed, 'navbar-collapse': true }"
+      >
+     
+        <ul class="navbar-nav ">
+            
+            <li ng-class='nav-item'>
+                <a class="nav-item nav-link" routerLink="/dashboard">Dashboard</a>
+            </li>
+           
+            <li ng-class='nav-item'>
+                <a class="nav-item nav-link" routerLink="/heroes">Heroes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+        </ul>
       </div>
     </div>
   </nav>
+  

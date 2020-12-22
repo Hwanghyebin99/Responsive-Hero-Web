@@ -20,7 +20,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { ViewImageComponent } from './view-image/view-image.component';//bootstrap
+import { ViewImageComponent } from './view-image/view-image.component';
+import { HeroTableComponent } from './hero-table/hero-table.component';//bootstrap
 // web api load
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ViewImageComponent } from './view-image/view-image.component';//bootstr
     HeroSearchComponent,
     PageNotFoundComponent,
     NavBarComponent,
-    ViewImageComponent //heroesComponent
+    ViewImageComponent,
+    HeroTableComponent //heroesComponent
   ],
   imports: [
     BrowserModule,

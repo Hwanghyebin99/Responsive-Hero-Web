@@ -34,7 +34,6 @@
     color: #eee;
     max-height: 120px;
     min-width: 150px;
-    max-width: 500px;
     background-color: #3f525c;
     border-radius: 2px;
     margin-left : 10px;
@@ -50,15 +49,19 @@
   .grid-pad > [class*='col-']:last-of-type {
     padding-right: 20px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     .module {
       font-size: 10px;
+      text-align: center;
       max-height: 75px; }
       .col-1-4 {
         width: 100%;
       }
+      h4{
+        font-size : 20px;
+      }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1000px) {
     .grid {
       margin: 0;
     }

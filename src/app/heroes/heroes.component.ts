@@ -10,7 +10,7 @@ import { HeroService } from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[] = [];
-
+  hero !: Hero;
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
@@ -30,4 +30,5 @@ export class HeroesComponent implements OnInit {
     this.heroes = this.heroes.filter(h => h !== hero);//hero가 아닌 subset을 select하여 새로운 array로 반환
     this.heroService.deleteHero(hero).subscribe();
   }
+ 
 }

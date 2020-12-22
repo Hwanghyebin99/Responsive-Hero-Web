@@ -1,13 +1,5 @@
 <h2>My Heroes</h2>
-<ul class="heroes">
-  <li *ngFor="let hero of heroes"><!--히어로 목록 출력-->
-    <a routerLink="/detail/{{hero.id}}"> 
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </a>
-    <button class="delete" title="delete hero"
-  (click)="delete(hero)">delete</button>
-  </li>
-</ul>
+
 <div>
   <label>Hero name:
     <input #heroName />
@@ -16,5 +8,31 @@
   <button (click)="add(heroName.value); heroName.value=''"> <!-- input value를 인자로 넣음.-->
     add
   </button>
+</div>
+
   
+<div class="container" style="margin-top: 70px;">
+  
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>address</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hero of heroes"routerLink="/detail/{{hero.id}}" >
+        <td>{{ hero.id }}</td>
+        <td> {{ hero.name }}</td>
+        <td></td>
+        <td></td>
+        <td><button class="delete" title="delete hero"
+          (click)="delete(hero)">delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>

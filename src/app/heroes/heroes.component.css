@@ -53,7 +53,6 @@
 button {
   background-color: #eee;
   border: none;
-  padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
   cursor: hand;
@@ -65,9 +64,26 @@ button:hover {
 }
 
 button.delete {
-  position: relative;
-  left: 194px;
-  top: -32px;
+
   background-color: gray !important;
   color: white;
+}
+ th, td {
+  white-space: nowrap;
+}
+
+@media (max-width:640px){
+  td:nth-child(1){
+    display:none;
+  }
+  th:nth-child(1){
+    display:none;
+  }
+  td:nth-child(3){
+    display:none;
+  }
+  th:nth-child(3){
+    display:none;
+  }
+  
 }
