@@ -16,6 +16,8 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';//bootstrap
 // web api load
 
 @NgModule({
@@ -37,7 +39,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     // 실제 서버가 준비되면 이 부분을 제거하면 됩니다.
     HttpClientInMemoryWebApiModule.forRoot(
     InMemoryDataService, { dataEncapsulation: false }
-)
+),
+    NgbPaginationModule, NgbAlertModule,NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent],
