@@ -1,0 +1,13 @@
+<div *ngIf="hero">
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <!-- uppercase : angular의 기본파이프 uppercase pipe를 가르킴-->
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="hero.name" placeholder="name"/>
+         <!-- [(ngModel)]은 양방향 바인딩-->
+    </label>
+    </div>
+    <button (click)="goBack()">go back</button>
+    <button (click)="save()">save</button>
+</div>
