@@ -21,10 +21,10 @@ Angular 프레임워크와 Bootstrap을 이용하여 만든 반응형 웹 사이
   - [License](#license)
 
 ## 🔎Overview
-
-<!-- ![header](https://user-images.githubusercontent.com/43427200/131356172-8896705f-432e-4cf8-abf0-15a1cf29872a.png)
-![localhost_8089_ (1)](https://user-images.githubusercontent.com/43427200/131356390-ea8404bc-2182-4ee3-b1bb-29f458fe4561.png)
- -->
+### Desktop & Tablet
+<img src="https://user-images.githubusercontent.com/43427200/131366108-a41c14d4-8cb4-4b95-9514-6f0e1d130ff0.png"/> &nbsp
+### Phone
+<img src="https://user-images.githubusercontent.com/43427200/131366237-e42d88bf-d78d-4973-863a-9ccb9625b88a.png"/> &nbsp
 ## Getting Started
 
 ### Install
